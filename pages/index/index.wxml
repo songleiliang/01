@@ -1,0 +1,39 @@
+<!--index.wxml-->
+<view class="main">
+  <!-- 公共头部 -->
+  <myheader></myheader>  
+  <!-- 首页导航 -->
+  <view>
+    <scroll-view class="nav" scroll-x="true" >
+      <view bindtap="activeNav" data-index="{{index}}" 
+      class="nav-item {{index === currentIndexNav?'active':''}}" wx:for="{{navList}}" wx:key="index">
+        {{item.text}}
+      </view>
+    </scroll-view>
+    <!-- 轮播图 -->
+    <swiper class="slides" autoplay="true" indicator-dots circular>
+      <swiper-item wx:for="{{swiperList}}" wx:key="index">
+        <navigator>
+          <image mode="widthFix" src="{{item.imgSrc}}"></image>
+        </navigator>
+      </swiper-item>
+    </swiper>
+    <!-- 视频列表 -->
+    <view class="videos">
+      <navigator url="../detail/detail?id={{item.id}}" wx:for="{{videosList}}" wx:key="index">
+        <view class="video-item" >
+          <image src="{{item.imgSrc}}" mode="widthFix"></image>
+        </view>
+        <view class="video-info">
+           <view class="play_count">
+            <text class="plycount">播放量：{{item.playCount}}</text>
+          </view>
+          <view class="comment_count">
+            <text>弹幕：{{item.commentCount}}</text>
+          </view>
+        </view>
+        <view class="video-item">{{item.desc}}</view>
+      </navigator>
+    </view>
+  </view>
+</view>

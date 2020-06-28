@@ -1,0 +1,30 @@
+<!--pages/detail/detail.wxml-->
+<view>
+   <myheader></myheader>
+   <!-- 视频详情 -->
+   <view class="detail">
+      <video src="{{videoInfo.videoSrc}}" controls></video>
+      <view class="videoTitle">
+         {{videoInfo.videoTitle}}
+      </view>
+      <view class="videoDetail">
+         <text class="author">{{videoInfo.author}}</text>
+         <text class="playCount">{{videoInfo.playCount}}观看</text>
+         <text class="commentCount">{{videoInfo.commentCount}}弹幕</text>
+         <text class="date">日期：{{videoInfo.date}}</text>
+      </view>
+   </view>
+   <!-- 推荐视频 -->
+   <view class="otherList">
+      <navigator wx:for="{{othersList}}" wx:key="index">
+         <view class="img">
+            <image  src="{{item.imgSrc}}" mode="widthFix"></image>
+         </view>  
+         <view class="otherInfo">
+            <view class="otherTitle">{{item.title}}</view>
+            <text>{{item.playMsg}}观看</text>
+            <text>{{item.commentCount}}弹幕</text>
+         </view>    
+      </navigator>
+   </view>
+</view>

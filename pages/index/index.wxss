@@ -1,0 +1,39 @@
+/**index.wxss**/
+.nav {
+   display: flex;
+   white-space: nowrap;
+   padding: 5rpx 0;
+}
+.nav-item{
+   display: inline-block;
+   padding: 20rpx 45rpx;
+   font-size: 30rpx;
+}
+.nav-item.active{
+   border-bottom: 5rpx solid red;
+}
+.slides{
+   margin-top: 10rpx;
+}
+swiper {
+   height: 220rpx;
+}
+/* 视频 */
+.videos {
+   display: flex;
+   flex-wrap: wrap;
+   padding: 10rpx;
+   justify-content: space-between;
+   font-size: 36rpx;
+   
+}
+.videos navigator{
+   width: 48%;
+   margin-bottom: 20rpx;
+}
+.video-item{
+   position: relative;
+}
+.videos image {
+   width: 100%;
+}

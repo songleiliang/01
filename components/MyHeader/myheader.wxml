@@ -1,0 +1,15 @@
+<!--components/MyHeader/myheader.wxml-->
+<view class="my-header">
+   <navigator class="logo">
+   <image src="../../images/logo2.png" style="width:140rpx;height:60rpx"></image>
+   </navigator>
+   <view class="search">
+      <image src="../../images/search.png" style="width:60rpx;height:44rpx"></image>   
+   </view>
+   <view class="user-icon">
+      <image src="../../images/user.png" style="width:54rpx;height:60rpx"></image>   
+   </view>
+   <view class="download">
+      下载App
+   </view>
+</view>

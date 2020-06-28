@@ -1,0 +1,48 @@
+/* pages/detail/detail.wxss */
+.detail {
+   width: 100%;
+   padding: 5rpx;
+   font-size: 36rpx;
+   color: #666;
+}
+
+.videoTitle{
+   display: flex;
+   justify-content: center;
+}
+.author{
+   color: #000;
+}
+.videoDetail {
+   display: flex;
+   justify-content: space-between;
+}
+text{
+   margin-left: 15rpx;
+   font-size: 28rpx;
+}
+/* 视频推荐 */
+.otherList navigator{
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 14rpx;
+}
+.img{
+   width: 40%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.img image {
+   width: 80%;
+   border-radius: 15rpx;
+}
+.otherInfo {
+   width: 60%;
+   font-size: 36rpx;
+}
+.otherTitle {
+   font-size: 34rpx;
+   color: #e5e;
+   margin-bottom: 15rpx;
+}
